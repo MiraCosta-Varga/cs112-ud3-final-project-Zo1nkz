@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud2.controllers.TeacherAddController">
+    <children>
+        <TextField fx:id="teacherNameInput" layoutX="226.0" layoutY="37.0" />
+        <TextField fx:id="teacherPrimarySubjectInput" layoutX="226.0" layoutY="106.0" />
+        <TextField fx:id="teacherRaceInput" layoutX="226.0" layoutY="176.0" />
+        <TextField fx:id="teacherSalaryInput" layoutX="226.0" layoutY="247.0" />
+        <TextField fx:id="teacherCoursesInput" layoutX="226.0" layoutY="318.0" />
+        <Button fx:id="AddTeacherButton2" layoutX="250.0" layoutY="361.0" mnemonicParsing="false" onAction="#onAddTeacherButton2Click" text="Add New Teacher" />
+        <ImageView fx:id="teachImage1" fitHeight="150.0" fitWidth="200.0" layoutX="390.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ghibli-teacher.jpg" />
+         </image></ImageView>
+        <ImageView fx:id="teachImage2" fitHeight="150.0" fitWidth="265.0" layoutX="14.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../nerd-quagsire.jpg" />
+         </image></ImageView>
+        <Label layoutX="275.0" layoutY="14.0" text="Name">
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="239.0" layoutY="83.0" text="Primary Subject">
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="282.0" layoutY="153.0" text="Race">
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="275.0" layoutY="224.0" text="Salary">
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="182.0" layoutY="295.0" text="Courses (separate by comma)">
+            <font>
+                <Font name="Calibri Bold" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

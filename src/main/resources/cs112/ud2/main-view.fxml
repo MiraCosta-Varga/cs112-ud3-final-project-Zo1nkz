@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="269.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.ud2.controllers.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Java High School Tracker!">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+         <ImageView fx:id="mainImage" fitHeight="175.0" fitWidth="216.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <image>
+               <Image url="@../../cover.gif" />
+            </image></ImageView>
+      </center>
+   </BorderPane>
+
+    <Label fx:id="welcomeText" text="Which would you like to manage/View?" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="Button1" onAction="#onStudentButtonClick" text="Student" />
+   <Button fx:id="Button2" mnemonicParsing="false" onAction="#onTeacherButtonClick" text="Teacher" />
+   <Button fx:id="QuitButton" mnemonicParsing="false" onAction="#onQuitButtonClick" prefHeight="25.0" prefWidth="62.0" text="Exit" />
+</VBox>

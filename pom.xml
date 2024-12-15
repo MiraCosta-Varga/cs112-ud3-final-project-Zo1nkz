@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cs112</groupId>
-    <artifactId>ud3</artifactId>
+    <artifactId>ud2</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>UD3-Final-Project</name>
+    <name>UD2-GUIs</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>cs112.ud3/cs112.ud3.HelloApplication</mainClass>
+                            <mainClass>cs112.ud2/cs112.ud2.MainApplication</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
